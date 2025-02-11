@@ -612,6 +612,60 @@
 					</div>
 					<div class="tableHeader text sectionToggle" data-station="merchant">
 						<div class="label-combo is-flex-wrap-nowrap">
+							<p>S-class exosuit merchant upgrades:</p>
+							<button class="tooltip">
+								<data>Can be found on the space station.</data>
+								<data>Exosuit Merchant Upgrades</data>
+								<data>
+									Can be found on the space station at the Exosuit merchant.<br>
+									Only check upgrades available in S class.
+								</data>
+								<data>system/ESU</data>
+							</button>
+						</div>
+						<button class="button" data-display-default="none" id="hideESMerchantButton">Show</button>
+					</div>
+					<div class="tableHeader data" data-section="ESMerchant" style="display: none"
+						data-station="merchant">
+						<label for="esSearch">Search:</label>
+						<input type="text" id="esSearch" placeholder="🔎 Search" name="merchant-search"
+							class="input merchant-search">
+						<div class="checkboxes-grid" style="width: 100%">
+							<label class="checkbox" for="esDSU"><input type="checkbox" id="esDSU"
+									value="Defence Systems Upgrade" data-dest-checkbox-group="ESMerchant"><span
+									class="checkbox-label">Shield Module</span></label>
+
+							<label class="checkbox" for="esLSU"><input type="checkbox" id="esLSU"
+									value="Life Support Upgrade" data-dest-checkbox-group="ESMerchant"><span
+									class="checkbox-label">Life Support Module</span></label>
+
+							<label class="checkbox" for="esMSU"><input type="checkbox" id="esMSU"
+									value="Movement System Upgrade" data-dest-checkbox-group="ESMerchant"><span
+									class="checkbox-label">Movement Module</span></label>
+
+							<label class="checkbox" for="esRPM"><input type="checkbox" id="esRPM"
+									value="Radiation Protection Module" data-dest-checkbox-group="ESMerchant"><span
+									class="checkbox-label">Radiation Protection Module</span></label>
+
+							<label class="checkbox" for="esTPMC"><input type="checkbox" id="esTPMC"
+									value="Thermal Protection Module (Cold)" data-dest-checkbox-group="ESMerchant"><span
+									class="checkbox-label">Thermal Protection Module (Cold)</span></label>
+
+							<label class="checkbox" for="esTPMH"><input type="checkbox" id="esTPMH"
+									value="Thermal Protection Module (Heat)" data-dest-checkbox-group="ESMerchant"><span
+									class="checkbox-label">Thermal Protection Module (Heat)</span></label>
+
+							<label class="checkbox" for="esTPM"><input type="checkbox" id="esTPM"
+									value="Toxic Protection Module" data-dest-checkbox-group="ESMerchant"><span
+									class="checkbox-label">Toxic Protection Module</span></label>
+
+							<label class="checkbox" for="esUPM"><input type="checkbox" id="esUPM"
+									value="Underwater Protection Module" data-dest-checkbox-group="ESMerchant"><span
+									class="checkbox-label">Underwater Protection Module</span></label>
+						</div>
+					</div>
+					<div class="tableHeader text sectionToggle" data-station="merchant">
+						<div class="label-combo is-flex-wrap-nowrap">
 							<p>S-class multi-tool merchant upgrades:</p>
 							<button class="tooltip">
 								<data>Can be found on the space station.</data>
@@ -784,63 +838,13 @@
 									value="Minotaur Laser Upgrade" data-dest-checkbox-group="ECMerchant"><span
 									class="checkbox-label">Minotaur Laser Module</span></label>
 
+							<label class="checkbox" for="ecMLU"><input type="checkbox" id="ecMLU"
+									value="Minotaur Flamethrower Upgrade" data-dest-checkbox-group="ECMerchant"><span
+									class="checkbox-label">Minotaur Flamethrower Module</span></label>
+
 							<label class="checkbox" for="ecNCU"><input type="checkbox" id="ecNCU"
 									value="Nautilon Cannon Upgrade" data-dest-checkbox-group="ECMerchant"><span
 									class="checkbox-label">Nautilon Cannon Module</span></label>
-						</div>
-					</div>
-					<div class="tableHeader text sectionToggle" data-station="merchant">
-						<div class="label-combo is-flex-wrap-nowrap">
-							<p>S-class exosuit merchant upgrades:</p>
-							<button class="tooltip">
-								<data>Can be found on the space station.</data>
-								<data>Exosuit Merchant Upgrades</data>
-								<data>
-									Can be found on the space station at the Exosuit merchant.<br>
-									Only check upgrades available in S class.
-								</data>
-								<data>system/ESU</data>
-							</button>
-						</div>
-						<button class="button" data-display-default="none" id="hideESMerchantButton">Show</button>
-					</div>
-					<div class="tableHeader data" data-section="ESMerchant" style="display: none"
-						data-station="merchant">
-						<label for="esSearch">Search:</label>
-						<input type="text" id="esSearch" placeholder="🔎 Search" name="merchant-search"
-							class="input merchant-search">
-						<div class="checkboxes-grid" style="width: 100%">
-							<label class="checkbox" for="esDSU"><input type="checkbox" id="esDSU"
-									value="Defence Systems Upgrade" data-dest-checkbox-group="ESMerchant"><span
-									class="checkbox-label">Shield Module</span></label>
-
-							<label class="checkbox" for="esLSU"><input type="checkbox" id="esLSU"
-									value="Life Support Upgrade" data-dest-checkbox-group="ESMerchant"><span
-									class="checkbox-label">Life Support Module</span></label>
-
-							<label class="checkbox" for="esMSU"><input type="checkbox" id="esMSU"
-									value="Movement System Upgrade" data-dest-checkbox-group="ESMerchant"><span
-									class="checkbox-label">Movement Module</span></label>
-
-							<label class="checkbox" for="esRPM"><input type="checkbox" id="esRPM"
-									value="Radiation Protection Module" data-dest-checkbox-group="ESMerchant"><span
-									class="checkbox-label">Radiation Protection Module</span></label>
-
-							<label class="checkbox" for="esTPMC"><input type="checkbox" id="esTPMC"
-									value="Thermal Protection Module (Cold)" data-dest-checkbox-group="ESMerchant"><span
-									class="checkbox-label">Thermal Protection Module (Cold)</span></label>
-
-							<label class="checkbox" for="esTPMH"><input type="checkbox" id="esTPMH"
-									value="Thermal Protection Module (Heat)" data-dest-checkbox-group="ESMerchant"><span
-									class="checkbox-label">Thermal Protection Module (Heat)</span></label>
-
-							<label class="checkbox" for="esTPM"><input type="checkbox" id="esTPM"
-									value="Toxic Protection Module" data-dest-checkbox-group="ESMerchant"><span
-									class="checkbox-label">Toxic Protection Module</span></label>
-
-							<label class="checkbox" for="esUPM"><input type="checkbox" id="esUPM"
-									value="Underwater Protection Module" data-dest-checkbox-group="ESMerchant"><span
-									class="checkbox-label">Underwater Protection Module</span></label>
 						</div>
 					</div>
 					<div class="tableHeader text sectionToggle" data-station="scrapDealer">
